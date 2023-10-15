@@ -1,0 +1,17 @@
+{
+    "_type": "few_shot",
+    "input_variables": ["input1", "input2"],
+    "prefix": "Write 70-140 character Etsy titles for railroad t-shirts. Titles must end in '| color'.",
+    "example_prompt": {
+        "_type": "prompt",
+        "input_variables": ["input1", "input2", "output"],
+        "template": "Input: ({input1} + {input2})\nOutput: {output}"
+    },
+    "examples": [
+        {"input1": "Southern Railway", "input2": "Green", "output": "Southern Railway train shirt | SOU train memorabilia | Green"},
+        {"input1": "Pennsylvania Railroad", "input2": "Maroon", "output": "Pennsylvania Railroad t-shirt | PRR railfan shirt | Maroon"},
+        {"input1": "Southern Pacific Railway", "input2": "Gray", "output": "Southern Pacific Railway shirt | SP shirt for rail enthusiasts | Gray"},
+        {"input1": "Atantic Coast Line Railroad", "input2": "Gold", "output": "Atlantic Coast Line railroad tshirt | ACL railroad memorabilia | Gold"}
+    ],
+    "suffix": "Input: ({input1} + {input2})\nOutput:"
+}
